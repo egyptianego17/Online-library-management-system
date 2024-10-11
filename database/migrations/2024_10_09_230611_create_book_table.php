@@ -12,7 +12,7 @@ class CreateBookTable extends Migration
             $table->string('title');
             $table->string('author');
             $table->string('isbn')->unique();
-            $table->integer('copies_available');
+            $table->integer('copies_available')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });
